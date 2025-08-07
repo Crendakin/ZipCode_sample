@@ -1,12 +1,10 @@
 {
   "name": "mikud",
-  "version": "1.2.2",
-  "description": "Gets an Israeli zipcode by address. Simple as that.",
+  "version": "1.3.0",
+  "description": "Gets an Israeli zipcode by address. Optimized, lightweight, and secure.",
   "main": "app.js",
-  "dependencies": {
-    "request": "~2.88.2",
-    "underscore": "~1.6.0"
-  },
+  "type": "commonjs",
+  "dependencies": {},
   "devDependencies": {},
   "author": {
       "name": "reshefshai",
@@ -20,13 +18,24 @@
         "zipcode",
         "israel",
         "address",
-        "post"
+        "post",
+        "performance",
+        "lightweight",
+        "modern"
   ],
   "repository": {
         "type": "git",
         "url": "https://github.com/Akhzari/ZipCode_sample.git"
   },
   "engines": {
-    "node": ">=0.1.33"
-  }
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "benchmark": "node benchmark.js"
+  },
+  "files": [
+    "app.js",
+    "README.md"
+  ]
 }
